@@ -4,6 +4,7 @@
   "type": "module",
   "main": "script.js",
   "scripts": {
+    "deploy": "node node_modules/vite/bin/vite.js build && node node_modules/gh-pages/bin/gh-pages.js -d dist",
     "dev": "node node_modules/vite/bin/vite.js",
     "build": "node node_modules/vite/bin/vite.js build",
     "preview": "node node_modules/vite/bin/vite.js preview"
@@ -13,6 +14,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "vite": "^5.0.0"
   }
 }
